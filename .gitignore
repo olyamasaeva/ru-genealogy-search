@@ -1,0 +1,6 @@
+local.md
+__pycache__/
+*.pyc
+node_modules/
+*.ged
+*.html
