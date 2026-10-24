@@ -1,0 +1,121 @@
+0 HEAD
+1 CHAR UTF-8
+1 GEDC
+2 VERS 5.5.1
+1 NOTE Вымышленная семья для примера. Все имена, даты и шифры дел придуманы.
+0 @I1@ INDI
+1 NAME Анна /Иванова/
+1 SEX F
+1 RESN privacy
+1 FAMC @F1@
+0 @I2@ INDI
+1 NAME Сергей Николаевич /Иванов/
+1 SEX M
+1 BIRT
+2 DATE 12 MAR 1951
+2 PLAC Ленинград
+1 DEAT
+2 DATE 4 NOV 2009
+2 PLAC Санкт-Петербург
+2 SOUR @S1@
+3 PAGE наследственное дело № 000/2010 (пример)
+3 QUAY 3
+1 FAMC @F2@
+1 FAMS @F1@
+0 @I3@ INDI
+1 NAME Ольга /Иванова/
+1 SEX F
+1 RESN privacy
+1 FAMS @F1@
+0 @I4@ INDI
+1 NAME Николай Петрович /Иванов/
+1 SEX M
+1 BIRT
+2 DATE ABT 1915
+2 PLAC Тверская губерния, Бежецкий уезд
+2 SOUR @S2@
+3 PAGE донесение о безвозвратных потерях (пример)
+3 QUAY 2
+1 DEAT
+2 DATE AFT 1943
+2 NOTE Пропал без вести; дата по последнему донесению
+2 SOUR @S2@
+3 PAGE донесение о безвозвратных потерях (пример)
+3 QUAY 2
+1 NOTE Отчество подтверждено по донесению, год рождения — по нему же.
+1 FAMC @F3@
+1 FAMS @F2@
+0 @I5@ INDI
+1 NAME Мария Алексеевна /Иванова/
+1 NAME Мария Алексеевна /Козлова/
+2 TYPE birth
+1 SEX F
+1 BIRT
+2 DATE 1918
+2 PLAC Ленинград
+1 DEAT
+2 DATE 22 JAN 1996
+2 PLAC Санкт-Петербург
+2 SOUR @S1@
+3 PAGE наследственное дело № 000/1996 (пример)
+3 QUAY 3
+1 EVEN
+2 TYPE Эвакуация
+2 DATE 1942
+2 PLAC из Ленинграда в Ярославскую область
+2 SOUR @S3@
+3 QUAY 2
+1 FAMC @F4@
+1 FAMS @F2@
+0 @I6@ INDI
+1 NAME Пётр Иванович /Иванов/
+1 SEX M
+1 BIRT
+2 DATE ABT 1885
+2 PLAC Тверская губерния, Бежецкий уезд
+2 SOUR @S4@
+3 PAGE ф. N, оп. N, д. N, л. N (пример)
+3 QUAY 1
+1 NOTE Отчество «Иванович» — гипотеза по перебору отчеств; ждёт метрики.
+1 FAMS @F3@
+0 @I7@ INDI
+1 NAME Евдокия /Иванова/
+1 SEX F
+1 NOTE Девичья фамилия неизвестна.
+1 FAMS @F3@
+0 @I8@ INDI
+1 NAME Алексей /Козлов/
+1 SEX M
+1 OCCU рабочий
+1 FAMS @F4@
+0 @I9@ INDI
+1 NAME Анастасия /Козлова/
+1 SEX F
+1 FAMS @F4@
+0 @F1@ FAM
+1 HUSB @I2@
+1 WIFE @I3@
+1 CHIL @I1@
+0 @F2@ FAM
+1 HUSB @I4@
+1 WIFE @I5@
+1 CHIL @I2@
+1 MARR
+2 DATE ABT 1939
+0 @F3@ FAM
+1 HUSB @I6@
+1 WIFE @I7@
+1 CHIL @I4@
+0 @F4@ FAM
+1 HUSB @I8@
+1 WIFE @I9@
+1 CHIL @I5@
+0 @S1@ SOUR
+1 TITL Реестр наследственных дел Федеральной нотариальной палаты
+0 @S2@ SOUR
+1 TITL ОБД «Мемориал»
+0 @S3@ SOUR
+1 TITL База эвакуированных из блокадного Ленинграда
+0 @S4@ SOUR
+1 TITL Метрическая книга (пример)
+0 TRLR
