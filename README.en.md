@@ -31,6 +31,8 @@ VGD forum). The skill adds what the model does not know:
   - "Vozvrashchennye imena" (Returned Names) of the National Library of Russia: memorial
     books of victims of repression;
   - OBD Memorial (Soviet WWII losses);
+  - "Pamyati geroev Velikoy voyny" (WWI loss, hospital and award cards), including a
+    download of every card for a volost, which catches misspelled surnames;
 - **which sites block bots** (FamilySearch, Pamyat Naroda) and how to search them by hand,
   with a ready-made task;
 - **how to get through the "dark" 1920s–1960s**, when civil registry records are closed:
@@ -112,6 +114,11 @@ The skill searches OBD Memorial itself. Pamyat Naroda blocks bots, so the skill 
 task for you to search by hand. A loss report often gives the place of birth and the
 family's address. Survivors are not in OBD, so an empty result does not mean the person
 did not serve.
+
+**How do I find an ancestor who fought in WWI?**
+In the "Pamyati geroev Velikoy voyny" card index (gwar.mil.ru): gubernia, uyezd, volost and
+often the village. If you know the volost, the skill downloads all its cards: surnames in
+the index are often misspelled, and a surname search misses them.
 
 **What about the 1920s–1960s, when civil registry records are closed?**
 In Russia, civil registry records younger than 100 years are given only to relatives.
