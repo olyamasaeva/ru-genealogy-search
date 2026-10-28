@@ -1,8 +1,16 @@
-# ru-genealogy-search — поиск предков по русским источникам для Claude Code
+# ru-genealogy-search — поиск предков по русским и советским архивам
 
-Скилл для [Claude Code](https://claude.com/claude-code): Claude ищет ваших
-предков и родственников по открытым онлайн-базам России и бывшего СССР и
-достраивает родословное дерево в формате GEDCOM.
+**Находит то, чего нет в первой выдаче поисковика:** дату смерти и последний
+адрес родственника, умершего после 1990-х (реестр наследственных дел
+нотариата); год рождения, адрес и маршрут блокадника (база эвакуированных из
+Ленинграда); дело репрессированного (книги памяти «Возвращённые имена»);
+донесение о гибели прадеда с адресом семьи (ОБД «Мемориал»). Из найденного
+собирает родословное дерево в GEDCOM с источником и уровнем доверия у
+каждого факта.
+
+Скилл для ИИ-агентов: Claude Code, Codex и других, кто читает `SKILL.md`.
+Агент сам гоняет запросы по базам скриптами, а где сайт закрыт капчей,
+готовит вам задание на ручной поиск.
 
 *English version: [README.en.md](README.en.md).*
 
@@ -49,8 +57,20 @@
 
 ## Установка
 
+Одной командой через [Skills CLI](https://github.com/vercel-labs/skills)
+(нужен Node.js), CLI спросит, в какого агента ставить:
+
 ```bash
+npx skills add https://github.com/olyamasaeva/ru-genealogy-search
+```
+
+Или клоном в папку скиллов своего агента:
+
+```bash
+# Claude Code
 git clone https://github.com/olyamasaeva/ru-genealogy-search ~/.claude/skills/ru-genealogy-search
+# Codex
+git clone https://github.com/olyamasaeva/ru-genealogy-search ~/.codex/skills/ru-genealogy-search
 ```
 
 Для скриптов нужны Python 3.10+ и Node.js 20+ (проверено на Linux). Скилл сам
@@ -60,7 +80,7 @@ git clone https://github.com/olyamasaeva/ru-genealogy-search ~/.claude/skills/ru
 
 ## Как пользоваться
 
-В Claude Code напишите, например:
+Напишите агенту, например:
 
 - «Найди, когда умерла моя прабабушка Мария Ивановна Смирнова, жила в
   Тверской области»
@@ -137,7 +157,7 @@ python3 ~/.claude/skills/ru-genealogy-search/scripts/ged2html.py \
 потом ищет архив и фонд.
 
 **Нужен ли платный доступ?**
-Нет. Скилл работает только с открытыми базами. Нужен Claude Code.
+Нет. Скилл работает только с открытыми базами. Нужен агент: Claude Code, Codex или другой со скиллами.
 
 ## Ответственность
 

@@ -16,7 +16,9 @@ description: Вызывать, когда ищут предков или род�
 
 Рецепты и установка — [sources.md](sources.md) (начни с «Установка» и
 «Сначала — территория и время»). Скрипты — `scripts/`, запускай полным путём
-`$S/…`, где `S=~/.claude/skills/ru-genealogy-search/scripts`.
+`$S/…`, где `S` — папка `scripts/` рядом с этим `SKILL.md`
+(например, `~/.claude/skills/ru-genealogy-search/scripts` или
+`~/.codex/skills/ru-genealogy-search/scripts`).
 
 Если рядом есть `local.md`, прочитай его: там настройки конкретного
 пользователя (папка с деревом, журнал, особые договорённости).

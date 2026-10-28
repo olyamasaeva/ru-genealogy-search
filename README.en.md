@@ -1,8 +1,15 @@
-# ru-genealogy-search: find ancestors in Russian and Soviet records with Claude Code
+# ru-genealogy-search: find ancestors in Russian and Soviet records
 
-A skill for [Claude Code](https://claude.com/claude-code). Claude searches open online
-databases of Russia and the former USSR for your ancestors and relatives and builds a
-family tree in GEDCOM format.
+**Finds what a web search does not:** the date of death and last address of a relative
+who died after the 1990s (Russian notary inheritance registry); the birth year, address
+and route of someone evacuated from besieged Leningrad; a repression case file
+(Returned Names memorial books); a WWII loss report that names the soldier's family and
+home address (OBD Memorial). It turns the finds into a GEDCOM family tree where every
+fact carries its source and a confidence level.
+
+A skill for AI agents: Claude Code, Codex and other agents that read `SKILL.md`. The agent
+queries the databases with scripts; where a site is behind a CAPTCHA, it writes you a
+task for a manual search.
 
 *Русская версия: [README.md](README.md).*
 
@@ -47,8 +54,20 @@ VGD forum). The skill adds what the model does not know:
 
 ## Installation
 
+With the [Skills CLI](https://github.com/vercel-labs/skills) (needs Node.js); it asks which
+agent to install into:
+
 ```bash
+npx skills add https://github.com/olyamasaeva/ru-genealogy-search
+```
+
+Or clone it into your agent's skills folder:
+
+```bash
+# Claude Code
 git clone https://github.com/olyamasaeva/ru-genealogy-search ~/.claude/skills/ru-genealogy-search
+# Codex
+git clone https://github.com/olyamasaeva/ru-genealogy-search ~/.codex/skills/ru-genealogy-search
 ```
 
 The scripts need Python 3.10+ and Node.js 20+ (tested on Linux). The skill installs
@@ -62,7 +81,7 @@ direct connection (`--direct`). Browser scripts take a proxy from
 
 ## How to use
 
-In Claude Code, write for example:
+Ask your agent, for example:
 
 - "Find when my great-grandmother Maria Ivanovna Smirnova died; she lived in the Tver
   region"
@@ -106,7 +125,7 @@ district and parish the village belonged to at the time, and only then looks for
 archive and fond.
 
 **Do I need a paid account?**
-No. The skill uses open databases only. You need Claude Code.
+No. The skill uses open databases only. You need an agent: Claude Code, Codex or another one with skills.
 
 ## Limitations
 

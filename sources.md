@@ -5,7 +5,7 @@
 Проверено на Linux (bash), Node 20, playwright 1.63, Python 3.12.
 
 ```bash
-S=~/.claude/skills/ru-genealogy-search/scripts
+S=~/.claude/skills/ru-genealogy-search/scripts   # или папка scripts/ там, куда установлен скилл
 export NODE_PATH=~/.cache/genealogy-node/node_modules
 node -e "require('playwright')" 2>/dev/null || (mkdir -p ~/.cache/genealogy-node && cd ~/.cache/genealogy-node && npm i playwright@1.63 && npx playwright install --with-deps chromium)
 node -e "require('playwright').chromium.launch().then(b => b.close()).then(() => console.log('chromium ok'))"
